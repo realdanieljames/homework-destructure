@@ -57,20 +57,20 @@ EVERY EXERCISE SHOULD USE DESTRUCTURING*/
  * **********************************************************************************/ /*
 /***************************************************************************************/
 
-// let items = [
-//     { color: 'blue', shape: 'circle' },
-//     { color: 'orange', shape: 'triangle' },
-//     { color: 'red', shape: 'square' },
-// ];
+let items = [
+    { color: 'blue', shape: 'circle' },
+    { color: 'orange', shape: 'triangle' },
+    { color: 'red', shape: 'square' },
+];
 
-// // const [{color, shape }] = items;
+// const [{color, shape }] = items;
 
 
-// let colorShape = items.map(({ color, shape}) => {
-//     return `${color} ${shape}`
-// })
+let colorShape = items.map(({ color, shape}) => {
+    return `${color} ${shape}`
+})
 
-// console.log(colorShape)
+console.log(colorShape.join(', '))
 
 // //================================================================================================================================================================//
 //=================================================================================================================================================================//
