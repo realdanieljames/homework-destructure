@@ -4,13 +4,14 @@ mechanics.
 EVERY EXERCISE SHOULD USE DESTRUCTURING*/
 //================================================================================================================================================================//
 //=================================================================================================================================================================//
-
-/***********************************************************************
- *                //3.  DESTRUCTURE THIS OBJECT LITERAL                *
- *           // SO THAT EACH VALUE CAN BE CALLED BY ITS KEY.           *
- * // RE-NAME THE ARRAY VALUES FOR THE 'NAMES' KEY OF THE OCEAN OBJECT *
- *                      // TO AT, PA, IN, AND AR                       *
- ***********************************************************************/
+/****************************************************************************
+ * /*********************************************************************** *
+ * *                //3.  DESTRUCTURE THIS OBJECT LITERAL                *  *
+ * *           // SO THAT EACH VALUE CAN BE CALLED BY ITS KEY.           *  *
+ * * // RE-NAME THE ARRAY VALUES FOR THE 'NAMES' KEY OF THE OCEAN OBJECT *  *
+ * *                      // TO AT, PA, IN, AND AR                       *  *
+ * ***********************************************************************//*
+/****************************************************************************/
 
 // const water = {
 //     lake: {
@@ -27,19 +28,15 @@ EVERY EXERCISE SHOULD USE DESTRUCTURING*/
 //     },
 // };
 
-// // const nameInitials = ['AT', 'PA', 'IN', 'AR']
+
+// const nameInitials = ['AT', 'PA', 'IN', 'AR']
 // let { lake, river, ocean } = water;
-// // let { context, names} = ocean;
 
-// let { context, names: ['AT', 'PA', 'IN', 'AR'] = ocean
-// names = ['AT', 'PA', 'IN', 'AR']
-
-// console.log(names)
+// let { context, names } = ocean
+// ocean.names = nameInitials
 
 
-// // console.log('lake :', lake)
-// // console.log('river :', river)
-// console.log('ocean :', ocean)
+// console.log('water :', water)
 
 
 
@@ -57,20 +54,20 @@ EVERY EXERCISE SHOULD USE DESTRUCTURING*/
  * **********************************************************************************/ /*
 /***************************************************************************************/
 
-let items = [
-    { color: 'blue', shape: 'circle' },
-    { color: 'orange', shape: 'triangle' },
-    { color: 'red', shape: 'square' },
-];
+// let items = [
+//     { color: 'blue', shape: 'circle' },
+//     { color: 'orange', shape: 'triangle' },
+//     { color: 'red', shape: 'square' },
+// ];
 
-// const [{color, shape }] = items;
+// // const [{color, shape }] = items;
 
 
-let colorShape = items.map(({ color, shape}) => {
-    return `${color} ${shape}`
-})
+// let colorShape = items.map(({ color, shape}) => {
+//     return `${color} ${shape}`
+// })
 
-console.log(colorShape.join(', '))
+// console.log(colorShape.join(', '))
 
 // //================================================================================================================================================================//
 //=================================================================================================================================================================//
@@ -112,9 +109,7 @@ console.log(colorShape.join(', '))
 // console.log('two: ', two)
 
 
-
 // const {main, second, otherShops} = repairPlaces
-// // console.log(otherShops)
 // const [third, fourth, ...fifth] = otherShops
 // console.log('third: ', third)
 // console.log('fourth: ', fourth)
@@ -154,7 +149,7 @@ console.log(colorShape.join(', '))
 // let car2 = new Cars('bmw', 'white', 2020)
 // let car3 = new Cars('lambourghini', 'black', 2019)
 // let car4 = new Cars('tesla', 'burgundy', 2021)
-// const {make, color, year} = car1;
+// // const {make, color, year} = car1;
 
 // console.log('car1: ', car1)
 // console.log('car2: ', car2)
@@ -174,30 +169,30 @@ console.log(colorShape.join(', '))
 //and list the chosen object ascending by major and log the average gpa,
 //use method chaining if you can
 
-let schoolArray = [
-    { school: 'Pataway', major: 'comp sci', year: 'sophomore', gpa: 3.2 },
-    { school: 'Bronxville', major: 'medicine', year: 'junior', gpa: 4.0 },
-    { school: 'Scarsdale', major: 'accounting', year: 'freshman', gpa: 2.6 },
-    { school: 'Peekskill', major: 'liberal arts', year: 'freshman', gpa: 4.0 },
-    { school: 'Anopram', major: 'accounting', year: 'senior', gpa: 3.7 },
-];
+// let schoolArray = [
+//     { school: 'Pataway', major: 'comp sci', year: 'sophomore', gpa: 3.2 },
+//     { school: 'Bronxville', major: 'medicine', year: 'junior', gpa: 4.0 },
+//     { school: 'Scarsdale', major: 'accounting', year: 'freshman', gpa: 2.6 },
+//     { school: 'Peekskill', major: 'liberal arts', year: 'freshman', gpa: 4.0 },
+//     { school: 'Anopram', major: 'accounting', year: 'senior', gpa: 3.7 },
+// ];
 
 
-let dontUse = []
-let allGPA =  schoolArray.map(({gpa}) => {
+// let dontUse = []
+// let allGPA =  schoolArray.map(({gpa}) => {
 
-    return gpa > 3.5 ? gpa: dontUse.push(gpa)
-})
-console.log(allGPA)
+//     return gpa > 3.5 ? gpa: dontUse.push(gpa)
+// })
+// console.log(allGPA)
 
-let reducer = allGPA.reduce( (pValue, cValue, cIndex, array) => {
-    console.log(pValue)
-    console.log(cValue)
-    console.log(cIndex)
-    let newValue = cValue + pValue
-}
-)
-// console.log(newValue)
+// let reducer = allGPA.reduce( (pValue, cValue, cIndex, array) => {
+//     console.log(pValue)
+//     console.log(cValue)
+//     console.log(cIndex)
+//     let newValue = cValue + pValue
+// }
+// )
+// // console.log(newValue)0
 
 
 
