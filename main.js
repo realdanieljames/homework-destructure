@@ -41,6 +41,24 @@ EVERY EXERCISE SHOULD USE DESTRUCTURING*/
 
 
 
+// const {
+//     lake: {
+//         description, 
+//         popular: {staate, name}
+//     },
+//     river: {
+//         definition,
+//         popular known 
+//     }
+//     ocean : {
+//         context
+//     }
+
+// }
+
+
+
+
 //================================================================================================================================================================//
 //=================================================================================================================================================================//
 /**********************************************************************************
@@ -80,29 +98,29 @@ EVERY EXERCISE SHOULD USE DESTRUCTURING*/
  * *              // THEY SHOULD BE IN AN ARRAY CALLED FIFTH               *  *
  * *************************************************************************/ /*
 /******************************************************************************/
-// const car = {
-//     carTypes: {
-//         one: { make: 'Mercedes', model: 'Meybach', year: 2020 },
-//         two: {
-//             make: 'toyota',
-//             model: 'Landcruiser',
-//             year: 2018,
-//         },
-//     },
-//     numWheels: 4,
-//     gps: true,
-//     autoSteer: true,
-//     repairPlaces: {
-//         main: 'Dealership',
-//         second: 'Roe Park Car Shop',
-//         otherShops: [
-//             'Bozo Repair',
-//             'Johnson Body',
-//             'Fixer Upper Central',
-//             'Last Chance Repairs',
-//         ],
-//     },
-// };
+const car = {
+    carTypes: {
+        one: { make: 'Mercedes', model: 'Meybach', year: 2020 },
+        two: {
+            make: 'toyota',
+            model: 'Landcruiser',
+            year: 2018,
+        },
+    },
+    numWheels: 4,
+    gps: true,
+    autoSteer: true,
+    repairPlaces: {
+        main: 'Dealership',
+        second: 'Roe Park Car Shop',
+        otherShops: [
+            'Bozo Repair',
+            'Johnson Body',
+            'Fixer Upper Central',
+            'Last Chance Repairs',
+        ],
+    },
+};
 
 // const {carTypes:{one, two}, numWheels, gps, autoSteer, repairPlaces } = car
 // console.log('one:', one)
@@ -111,9 +129,28 @@ EVERY EXERCISE SHOULD USE DESTRUCTURING*/
 
 // const {main, second, otherShops} = repairPlaces
 // const [third, fourth, ...fifth] = otherShops
+
+
+
+
 // console.log('third: ', third)
 // console.log('fourth: ', fourth)
 // console.log('fifth: ', fifth)
+
+
+// const {
+//     carTypes: {
+//         one: { make: carOneMake, model: carOneModel, year: carOneYear }, 
+//         two: { make: carTwoMake, model: carTwoModel, year: carTwoYear }
+// },
+//     numWheels,
+//     gps,
+//     autoSteer,
+//     repairPlaces: {
+//         main,
+//         second,
+//         others: [third, fourth, ...fifth]
+//     } = car
 
 
 
@@ -136,26 +173,29 @@ EVERY EXERCISE SHOULD USE DESTRUCTURING*/
  *  *                 AND LIST A STRING FOR EACH                 *  *
  * *                  SHOWING THEIR VALUES.*/                   /*  *
 * /**************************************************************/ /*
-********************************************************************/
-// class Cars {
+// ********************************************************************/
+// class Car {
 //     constructor(make, color, year) {
 //         this.make = make;
 //         this.color =color;
 //         this.year = year
 //     }
+//     toString(){
+//         return `Make: ${this.make}, Color: ${this.color}, Year: ${this.year}`;
+//     }
 
 // }
-// let car1 = new Cars('benz', 'black', 2022)
-// let car2 = new Cars('bmw', 'white', 2020)
-// let car3 = new Cars('lambourghini', 'black', 2019)
-// let car4 = new Cars('tesla', 'burgundy', 2021)
-// // const {make, color, year} = car1;
 
-// console.log('car1: ', car1)
-// console.log('car2: ', car2)
-// console.log('car3: ', car3)
-// console.log('car4: ', car4)
+// const myCars = [
+//     new Car('car1', 'blue', '2000'),
+//     new Car('car2', 'red', '2010'),
+//     new Car('car3', 'green', '2020'),
+//     new Car('car4', 'yellow', '1980')
+// ];
 
+// let [car1, car2, car3, car4] = myCars
+
+// console.log(car1.toString(), car2.toString(), car3.toString(), car4.toString())
 
 
 
@@ -169,34 +209,29 @@ EVERY EXERCISE SHOULD USE DESTRUCTURING*/
 //and list the chosen object ascending by major and log the average gpa,
 //use method chaining if you can
 
-// let schoolArray = [
-//     { school: 'Pataway', major: 'comp sci', year: 'sophomore', gpa: 3.2 },
-//     { school: 'Bronxville', major: 'medicine', year: 'junior', gpa: 4.0 },
-//     { school: 'Scarsdale', major: 'accounting', year: 'freshman', gpa: 2.6 },
-//     { school: 'Peekskill', major: 'liberal arts', year: 'freshman', gpa: 4.0 },
-//     { school: 'Anopram', major: 'accounting', year: 'senior', gpa: 3.7 },
-// ];
-
-
-// let dontUse = []
-// let allGPA =  schoolArray.map(({gpa}) => {
-
-//     return gpa > 3.5 ? gpa: dontUse.push(gpa)
-// })
-// console.log(allGPA)
-
-// let reducer = allGPA.reduce( (pValue, cValue, cIndex, array) => {
-//     console.log(pValue)
-//     console.log(cValue)
-//     console.log(cIndex)
-//     let newValue = cValue + pValue
-// }
-// )
-// // console.log(newValue)0
+let schoolArray = [
+    { school: 'Pataway', major: 'comp sci', year: 'sophomore', gpa: 3.2 },
+    { school: 'Bronxville', major: 'medicine', year: 'junior', gpa: 4.0 },
+    { school: 'Scarsdale', major: 'accounting', year: 'freshman', gpa: 2.6 },
+    { school: 'Peekskill', major: 'liberal arts', year: 'freshman', gpa: 4.0 },
+    { school: 'Anopram', major: 'accounting', year: 'senior', gpa: 3.7 },
+];
 
 
 
 
+
+
+
+let x = schoolArray
+.filter(item => item.gpa > 3.5)
+.sort( (a,b)=> (a.majorl > b.major ? 1 : -1))
+// .map(item => console.log(item))
+.reduce((acc, curr, idx, arr)=> {
+    return  idx === arr.length - 1 ? acc /arr.length: acc + curr.gpa;
+}, 0);
+
+console.log(x);
 
 
 //================================================================================================================================================================//
